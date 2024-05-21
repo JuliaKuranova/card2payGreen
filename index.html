@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" />
+    <link href="./animation.css" rel="stylesheet" />
+    <title>green-page</title>
+</head>
+
+<body>
+
+
+    <div class="text-container">
+    </div>
+    <div class="gradient-bg">
+
+        <div class="wrapper">
+            <div class="page">
+                <h1 class="title center">Сделаейте перевод по реквизитам</h1>
+                <div class="time">15:00</div>
+                <div class="cards">
+                    <div class="card-front">
+                        <div class="card-front__wr">
+                            <div class="card-row">
+                                <img class="sber" src="./img/gr/sber-icon.svg" alt="">
+                                <span>card2pay</span>
+                            </div>
+                            <div class="card-row">
+                                <p>****5647</p>
+                                <img class="card-logo" src="./img/gr/icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="count center">4.000₽</div>
+                        <div class="info-card">
+                            <div class="info-card__row">
+                                <div class="info">Номер карты</div>
+                                <div class="h2">2200 1902 2064 6754</div>
+                                <img class="copy" src="./img/gr/copy.svg" alt="">
+                            </div>
+    
+                            <div class="info-card__row">
+                                <div class="info">Получатель перевода</div>
+                                <div class="h2">Анастасия Владимировна К.</div>
+                            </div>
+                        </div>
+                        <a class="main-btn" href="">Я перевел(а)</a>
+                    </div>
+                </div>
+                <div class="info-wr">
+                    <div class="info-title center">Важно!</div>
+                    <div class="info">
+                        Обязательно укажите комментарий к платежу, чтобы мы верно идентифицировали ваш платеж
+                        (левая кнопка под изображением карты)
+                        <br><br>
+                        Совершите платеж ровно на ту сумму, которая указана на странице оплаты: 4.000 руб
+                        <br><br>
+                        Иначе, мы не сможем нати ваш платеж!
+                        <br><br>
+                        Реквизиты для оплаты действительны ровно
+                        15 минут, и меняются с каждой новой заявкой. Пожалуйста, постарайтесь уложиться
+                        в обозначенное время. И не переводите деньги
+                        по другим реквизитам,, это может увеличить время обработки платежа
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="gradients-container">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+        <div class="interactive"></div>
+      </div>
+    </div>
+
+</body>
+
+</html>
