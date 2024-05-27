@@ -98,10 +98,12 @@ h1 {
     /* flex-direction: column; */
     /* justify-content: space-between; */
     /* background: url("./img/gr/card-bg-desct.png") no-repeat center center; */
-    background: url("./img/gr/card-bg.png") no-repeat center center;
+    /* background: url("./img/gr/card-bg.png") no-repeat center center; */
     /* background: #067865; */
     border-radius: 16px;
     width: 329px;
+    box-shadow: 0px 0px 75px 25px black;
+    /* opacity: 0.2; */
 }
 
 .card-front__wr {
@@ -223,9 +225,11 @@ h1 {
     }
 
     .card-front {
-        background: url("./img/gr/card-bg-desct.png") no-repeat center center;
+        /* background: url("./img/gr/card-bg-desct.png") no-repeat center center; */
+        /* background: blue; */
         height: 395px;
         width: 583px;
+        
     }
 
     .sber {
