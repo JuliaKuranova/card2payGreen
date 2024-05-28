@@ -1,11 +1,13 @@
 :root {
     /* --opacity: 10%; */
-    --color-bg1: red;
-    --color-bg2: red;
+    /* --color-bg1: red;
+    --color-bg2: red; */
     --color1: 33, 122, 103;
     --color3: 33, 122, 103;
     --color4: 33, 122, 103;
     --color5: 33, 122, 103;
+
+    --color-red: 144, 54, 54;
     --color-interactive: 33, 122, 103;
     /* --circle-size-big: 50%; */
     --circle-size-small: 400px;
@@ -97,7 +99,7 @@
     left: calc(var(--w-390) - 200px);
     filter: url(#goo) blur(90px);
     position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
+    background: radial-gradient(circle at center, rgba(var(--color1), 1) 0, rgba(var(--color1), 0) 80%) no-repeat;
     /* background: radial-gradient(rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat; */
     /* mix-blend-mode: var(--blending); */
 
@@ -118,7 +120,7 @@
     left: calc(var(--w-390)  + 330px - 200px);
     filter: url(#goo) blur(90px);
     position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
+    background: radial-gradient(circle at center, rgba(var(--color1), 1) 0, rgba(var(--color1), 0) 80%) no-repeat;
     /* mix-blend-mode: var(--blending); */
 
     width: var(--circle-size-small);
@@ -139,7 +141,7 @@
     /* left: 0; */
     filter: url(#goo) blur(90px);
     position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color1), 1.2) 0, rgba(var(--color1), 0) 120%) no-repeat;
+    background: radial-gradient(circle at center, rgba(var(--color1), 1) 0, rgba(var(--color1), 0) 80%) no-repeat;
     /* mix-blend-mode: var(--blending); */
 
     width: var(--circle-size-small);
@@ -154,6 +156,28 @@
     /* opacity: var(--opacity-g); */
     /* opacity: 1; */
 }
+
+.g4 {
+    top: -20px;
+    /* left: 0; */
+    filter: url(#goo) blur(90px);
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color-red), 1) 0, rgba(var(--color-red), 0) 80%) no-repeat;
+    /* mix-blend-mode: var(--blending); */
+
+    width: var(--circle-size-small);
+    height: var(--circle-size-small);
+    /* top: calc(50% - var(--circle-size-big) / 2);
+    left: calc(50% - var(--circle-size-big) / 2); */
+
+    /* transform-origin: calc(50% - 400px); */
+    /* transform-origin: top left; */
+    animation: g3 2s;
+
+    /* opacity: var(--opacity-g); */
+    /* opacity: 1; */
+}
+
 
 @media (min-width: 744px) {
     .g1 {
