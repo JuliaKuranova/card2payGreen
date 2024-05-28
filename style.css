@@ -156,7 +156,7 @@ b {
 .card-bg {
     background-color: #151515;
     border-radius: 17px;
-    padding: 33px;
+    padding: 33px 21px;
     /* margin-bottom: 25px;
     margin-top: 45px; */
 
@@ -188,7 +188,7 @@ b {
 
 .copy {
     position: absolute;
-    right: 100px;
+    right: 80px;
     bottom: 22px;
     cursor: pointer;
 }
@@ -233,7 +233,7 @@ b {
 .done-img {
     width: 37px;
     /* height: 42px; */
-    margin-bottom: -50px;
+    /* margin-bottom: -50px; */
 }
 
 .table {
@@ -248,6 +248,7 @@ b {
 
 .table-row div {
     width: 50%;
+    min-width: 150px;
 }
 
 
@@ -278,13 +279,14 @@ b {
         display: flex;
         flex-direction: column;
         align-items: center;
-
-
         width: 100%;
         justify-content: space-between;
         margin-bottom: 100px;
     }
 
+    .card-bg {
+        padding: 62px 90px;
+    }
 
     .card-front__wr {
         padding: 50px 55px;
@@ -296,7 +298,6 @@ b {
         /* background: blue; */
         height: 395px;
         width: 583px;
-        
     }
 
     .sber-icon {
@@ -317,7 +318,7 @@ b {
         /* width: 639px; */
         /* height: 322px; */
         margin-bottom: 22px;
-        padding: 64px 0 64px 88px;
+        /* padding: 64px 0 64px 88px; */
         gap: 35px;
     }
 
@@ -333,7 +334,7 @@ b {
     .copy {
         height: 21px;
         width: 21px;
-        right: 280px;
+        right: 120px;
         bottom: 40px;
     }
 
@@ -355,27 +356,21 @@ b {
         text-align: center;
     }
 
-    /* page2  */
     .done {
         order: inherit;
         position: absolute;
         left: 0;
-        top: 410px;
+        top: 470px;
     }
 
-    .card-front img {
-        margin-bottom: inherit;
-        
+    .card-back-left {
+        margin-left: auto;
+        z-index: 20;
     }
 
     .done-img {
         width: 106px;
     }
-
-    .card-back {
-        margin-left: auto;
-    }
-
 
 }
 
@@ -385,6 +380,24 @@ b {
     }
 
     .card-back {
-        margin-top: -107px;
+        margin-top: -100px;
+        min-width: 640px;
     }
+
+    /* page2  */
+    /* .done {
+        order: inherit;
+        position: absolute;
+        left: 0;
+        top: 410px;
+    } */
+
+    .card-front img {
+        margin-bottom: inherit;
+        
+    }
+
+
+
+
 }
