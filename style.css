@@ -137,9 +137,6 @@ b {
 
 .card-front img {
     z-index: 10;
-
-    display: flex;
-    margin-bottom: -50px;
 }
 
 .count {
@@ -205,6 +202,7 @@ b {
     order: -1;
     display: flex;
     justify-content: center;
+    margin-bottom: -50px;
 }
 
 .table {
