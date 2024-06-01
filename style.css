@@ -98,8 +98,27 @@ b {
     position: absolute;
     right: 30px;
     color: #DCDCDC;
+    z-index: 1;
 }
 
+@keyframes back-anim {
+    0% {
+        background-color: black;
+    }
+
+    /* 50% {
+       transform: translateX(0) translateY(0);
+    } */
+
+    100% {
+        background-color: rgba(6, 120, 101, .35);
+    }
+}
+
+.back-anim {
+    animation: back-anim 2s;
+    background: rgba(6, 120, 101, 0.35);
+}
 
 .card-front {
     /* padding: 28px 33px; */
@@ -110,18 +129,21 @@ b {
     /* background: url("./img/card-bg-desct.png") no-repeat center center; */
     /* background: url("./img/card-bg.png") no-repeat center center; */
     /* background: #067865; */
-    border-radius: 16px;
+    /* border-radius: 167px; */
     width: 329px;
-    box-shadow: 0px 0px 75px 25px black;
+    /* box-shadow: 0px 0px 75px 25px black; */
     /* opacity: 0.2; */
 }
 
 .card-front__wr {
+    position: relative;
     display: flex;
     height: 167px;
     flex-direction: column;
     padding: 28px 33px;
     justify-content: space-between;
+    box-shadow: 0px 0px 75px 25px black;
+    border-radius: 16px;
 }
 
 .card-row {
@@ -151,6 +173,8 @@ b {
 
 .card-back {
     min-width: 330px;
+    z-index: 900000;
+    position: relative;
 }
 
 .card-bg {
@@ -233,7 +257,7 @@ b {
 .done-img {
     width: 37px;
     /* height: 42px; */
-    /* margin-bottom: -50px; */
+    margin-bottom: -50px;
 }
 
 .table {
@@ -266,7 +290,7 @@ b {
     }
 
     .title {
-        padding: 130px 0 170px;
+        padding: 130px 0 100px;
     }
 
     .time {
@@ -283,6 +307,11 @@ b {
         justify-content: space-between;
         margin-bottom: 100px;
     }
+
+    /* .main-cards {
+        margin-top: 70px;
+        margin-top: -100px;
+    } */
 
     .card-bg {
         padding: 62px 90px;
@@ -360,7 +389,7 @@ b {
         order: inherit;
         position: absolute;
         left: 0;
-        top: 470px;
+        top: 370px;
     }
 
     .card-back-left {
@@ -370,6 +399,7 @@ b {
 
     .done-img {
         width: 106px;
+        margin-bottom: inherit;
     }
 
 }
@@ -380,7 +410,7 @@ b {
     }
 
     .card-back {
-        margin-top: -100px;
+        
         min-width: 640px;
     }
 
