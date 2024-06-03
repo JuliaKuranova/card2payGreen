@@ -101,9 +101,10 @@
 }
 .g1 {
     top: -70px;
-    left: calc(var(--w-390)  + 330px - 200px);
+    /* left: calc(var(--w-390)  + 330px - 200px); */
+    right: calc(var(--w-390) - 200px);
     filter: url(#goo) blur(90px);
-    position: absolute;
+    position: fixed;
     animation: g1 2s;
     opacity: 1;
 }
@@ -162,14 +163,17 @@
 
 @media (min-width: 992px) {
     .g1 {
-        /* top: -270px; */
-        top: -60px;
+        top: 350px;
+        /* top: -60px; */
         left: calc(var(--w-992) - 200px);
         /* left: 0; */
     }
-    
+
+    /* w экрана - w разрешения = остаток по бокам / 2  */
+
     .g2 {
-        top: 350px;
+        top: -60px;
+        /* top: 350px; */
         /* left: 15%; */
         left: calc(var(--w-992)  + 583px - 200px);
     }
