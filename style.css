@@ -230,8 +230,11 @@ b {
 
 .info-title {
   color: #42af98;
-  font-size: 17px;
   margin-bottom: 13px;
+}
+
+.info-text {
+  font-size: 17px;
 }
 
 .btn {
@@ -263,7 +266,7 @@ b {
 .done-img {
   width: 37px;
   /* height: 42px; */
-  margin-bottom: -50px;
+  margin-bottom: -20px;
 }
 
 .table-row {
@@ -297,7 +300,7 @@ b {
 }
 
 .search-loader {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 @media (min-width: 992px) {
@@ -400,8 +403,11 @@ b {
   }
 
   .info-title {
-    font-size: 25px;
     margin-bottom: 25px;
+  }
+
+  .info-text {
+    font-size: 25px;
   }
 
   .done {
@@ -427,6 +433,21 @@ b {
   .search-title {
     order: inherit;
   }
+
+  .disput-cont {
+    margin-left: inherit;
+    margin-top: 400px;
+  }
+
+  .loader-wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: inherit;
+    height: inherit;
+    top: -25px;
+    left: -20px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -449,9 +470,14 @@ b {
     margin-top: inherit;
   }
 
-  .card-front img {
+  /* .card-front img {
     margin-bottom: inherit;
     margin-left: 60px;
+  } */
+
+  .done-img {
+    margin-bottom: inherit;
+    margin-left: 90px;
   }
 
   .back-anim {
@@ -464,6 +490,6 @@ b {
 
   .disput-cont {
     margin-left: inherit;
-    margin-top: 250px;
+    margin-top: 500px;
   }
 }
