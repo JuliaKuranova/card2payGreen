@@ -50,9 +50,19 @@
     transform: translateX(-50%) translateY(-100vh);
   }
 
-  /* 50% {
-       transform: translateX(0) translateY(0);
-    } */
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes g1-1 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  50% {
+    transform: translateX(120px) translateY(130px);
+  }
 
   100% {
     transform: translateX(0) translateY(0);
@@ -64,9 +74,19 @@
     transform: translateX(150%) translateY(100vh);
   }
 
-  /* 50% {
-       transform: translateX(0) translateY(0);
-    } */
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes g2-2 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-150px) translateY(-60px);
+  }
 
   100% {
     transform: translateX(0) translateY(0);
@@ -100,6 +120,7 @@
   width: var(--circle-size-small);
   height: var(--circle-size-small);
 }
+
 .g1 {
   top: -70px;
   right: calc(var(--w-390) - 160px);
@@ -116,6 +137,7 @@
   position: absolute;
   animation: g3 2s;
   opacity: 1;
+  animation-iteration-count: infinite;
 }
 
 .g3,
@@ -239,15 +261,39 @@
 
 @media (min-width: 744px) {
   .g1 {
-    /* top: -70px; */
     left: calc(var(--w-744) + 530px - 200px);
-    animation: g1 2s;
+    /* animation-name: g1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;  */
+
+    animation: 
+    g1-1 5s infinite reverse 2s, 
+    g1 2s 1 alternate;
   }
+
+  /* .g1-1 { */
+  /* left: calc(var(--w-744) + 530px - 200px);
+    animation-name: g1-1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-delay: -2s; */
+  /* } */
 
   .g2 {
     top: 90px;
     left: calc(var(--w-744) - 20px);
-    animation: g2 2s;
+    /* animation: g2 2s; */
+    /* animation-name: g2, g2-2;
+    animation-duration: 2s, 5s;
+    animation-iteration-count: 1, infinite;
+    animation-direction: normal, reverse;
+    animation-delay: -2s; */
+
+    animation: 
+    g2-2 5s infinite reverse 2s, 
+    g2 2s 1 alternate;
   }
 
   .g3,
