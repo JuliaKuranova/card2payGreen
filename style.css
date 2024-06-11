@@ -62,18 +62,13 @@ a {
 
 body {
   background: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .wrapper {
   max-width: 390px;
-  /* padding: 0 30px; */
   margin: auto;
-  /* position: relative; */
-  /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-  /* z-index: 1000; */
-  /* background: black; */
 }
 
 .page {
@@ -112,33 +107,19 @@ b {
     background-color: black;
   }
 
-  /* 50% {
-       transform: translateX(0) translateY(0);
-    } */
-
   100% {
-    background-color: rgba(6, 120, 101, 0.35);
+    background-color: rgba(6, 120, 101, 0.001);
   }
 }
 
 .back-anim {
   animation: back-anim 2s;
-  background: rgba(6, 120, 101, 0.35);
+  background: rgba(6, 120, 101, 0.001);
 }
 
 .card-front {
-  /* padding: 28px 33px; */
-  /* display: flex; */
   height: 223px;
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
-  /* background: url("./img/card-bg-desct.png") no-repeat center center; */
-  /* background: url("./img/card-bg.png") no-repeat center center; */
-  /* background: #067865; */
-  /* border-radius: 167px; */
   width: 329px;
-  /* box-shadow: 0px 0px 75px 25px black; */
-  /* opacity: 0.2; */
 }
 
 .card-front__wr {
@@ -187,12 +168,8 @@ b {
   background-color: #151515;
   border-radius: 17px;
   padding: 33px 21px;
-  /* margin-bottom: 25px;
-    margin-top: 45px; */
-
-  /* min-width: 330px; */
   max-width: 640px;
-  margin: 45px 0 25px;
+  margin: 25px 0 25px;
 }
 
 .info-card__row {
@@ -256,7 +233,6 @@ b {
   box-shadow: 0px 0px 30px #6f1c1c;
 }
 
-/* page2  */
 .done {
   order: -1;
   display: flex;
@@ -265,7 +241,6 @@ b {
 
 .done-img {
   width: 37px;
-  /* height: 42px; */
   margin-bottom: -20px;
 }
 
@@ -331,7 +306,6 @@ b {
   .time {
     font-size: 30px;
     top: 170px;
-    /* right: 30px;  */
   }
 
   .cards {
@@ -353,8 +327,6 @@ b {
   }
 
   .card-front {
-    /* background: url("./img/card-bg-desct.png") no-repeat center center; */
-    /* background: blue; */
     height: 395px;
     width: 583px;
   }
@@ -371,14 +343,11 @@ b {
 
   .count {
     font-size: 40px;
-    margin-top: inherit;
+    /* margin-top: inherit; */
   }
 
   .info-card {
-    /* width: 639px; */
-    /* height: 322px; */
     margin-bottom: 22px;
-    /* padding: 64px 0 64px 88px; */
     gap: 35px;
   }
 
@@ -411,14 +380,12 @@ b {
   }
 
   .done {
-    /* order: inherit; */
     position: absolute;
-    /* left: 0; */
-    top: 370px;
+    top: 280px;
   }
 
   .card-back-left {
-    margin-top: 250px;
+    margin-top: 350px;
   }
 
   .done-img {
@@ -470,14 +437,9 @@ b {
     margin-top: inherit;
   }
 
-  /* .card-front img {
-    margin-bottom: inherit;
-    margin-left: 60px;
-  } */
-
   .done-img {
     margin-bottom: inherit;
-    margin-left: 90px;
+    /* margin-left: 90px; */
   }
 
   .back-anim {
@@ -490,6 +452,6 @@ b {
 
   .disput-cont {
     margin-left: inherit;
-    margin-top: 500px;
+    margin-top: 440px;
   }
 }
