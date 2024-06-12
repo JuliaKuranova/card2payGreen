@@ -62,8 +62,8 @@ a {
 
 body {
   background: black;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
 }
 
 .wrapper {
@@ -241,7 +241,7 @@ b {
 
 .done-img {
   width: 37px;
-  margin-bottom: -20px;
+  margin-bottom: -30px;
 }
 
 .table-row {
@@ -390,7 +390,7 @@ b {
 
   .done-img {
     width: 106px;
-    margin-bottom: inherit;
+    /* margin-bottom: inherit; */
   }
 
   .disput-title {
@@ -438,7 +438,7 @@ b {
   }
 
   .done-img {
-    margin-bottom: inherit;
+    margin-bottom: -120px;
     /* margin-left: 90px; */
   }
 
