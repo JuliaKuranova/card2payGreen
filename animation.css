@@ -128,10 +128,10 @@
   right: calc(var(--w-390) - 100px);
   filter: url(#goo) blur(90px);
   position: fixed;
-  /* animation: g3 2s; */
-  animation: 
+  animation: g3 2s;
+  /* animation: 
   g1-1 5s infinite reverse 2s, 
-  g1 2s 1 alternate;
+  g1 2s 1 alternate; */
   opacity: 1;
 }
 
@@ -140,10 +140,10 @@
   left: calc(var(--w-390) - 160px);
   filter: url(#goo) blur(90px);
   position: absolute;
-  /* animation: g3 2s; */
-  animation: 
+  animation: g3 2s;
+  /* animation: 
   g2-2 5s infinite reverse 2s, 
-  g2 2s 1 alternate;
+  g2 2s 1 alternate; */
   opacity: 1;
 }
 
@@ -399,11 +399,11 @@
   } */
 
   .loader div {
-    transform-origin: 30px 50px;
+    transform-origin: 27px 35px;
   }
 
   .loader div:after {
-    width: 20px;
+    width: 17px;
     height: 40px;
     border-radius: 15px;
     top: -40px;

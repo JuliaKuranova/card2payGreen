@@ -233,7 +233,7 @@ b {
   box-shadow: 0px 0px 30px #6f1c1c;
 }
 
-.done {
+.img-left {
   order: -1;
   display: flex;
   justify-content: center;
@@ -282,7 +282,14 @@ b {
   .desc {
     font-size: 20px;
   }
+  .download {
+    width: 77px;
+    height: 77px;
+  }
 
+  .btn {
+    font-size: 25px;
+  }
   .cancel-subtitle {
     font-size: 14px;
   }
@@ -319,6 +326,7 @@ b {
 
   .card-bg {
     padding: 62px 90px;
+    margin: 40px 0 40px;
   }
 
   .card-front__wr {
@@ -343,7 +351,7 @@ b {
 
   .count {
     font-size: 40px;
-    /* margin-top: inherit; */
+    margin-top: inherit;
   }
 
   .info-card {
@@ -371,6 +379,10 @@ b {
     margin-bottom: inherit;
   }
 
+  .btn {
+    margin-bottom: inherit;
+  }
+
   .info-title {
     margin-bottom: 25px;
   }
@@ -379,9 +391,14 @@ b {
     font-size: 25px;
   }
 
-  .done {
+  .img-left {
     position: absolute;
-    top: 280px;
+    top: 310px;
+    left: 40px;
+  }
+
+  .img-c {
+    top: 150px;
   }
 
   .card-back-left {
@@ -424,6 +441,8 @@ b {
 
   .card-back {
     min-width: 640px;
+    /* display: grid;
+    gap: 50px; */
   }
 
   .done {
@@ -452,6 +471,6 @@ b {
 
   .disput-cont {
     margin-left: inherit;
-    margin-top: 440px;
+    margin-top: 200px;
   }
 }
