@@ -394,7 +394,7 @@ b {
   .img-left {
     position: absolute;
     top: 310px;
-    left: 40px;
+    /* left: 40px; */
   }
 
   .img-c {
@@ -407,7 +407,8 @@ b {
 
   .done-img {
     width: 106px;
-    /* margin-bottom: inherit; */
+    position: absolute;
+    top: 210px;
   }
 
   .disput-title {
@@ -445,9 +446,9 @@ b {
     gap: 50px; */
   }
 
-  .done {
+  .img-left {
     order: inherit;
-    left: 30px;
+    left: 40px;
   }
 
   .card-back-left {
