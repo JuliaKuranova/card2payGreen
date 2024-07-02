@@ -84,7 +84,7 @@
   left: calc(50% - var(--circle-size) / 2);
 
   transform-origin: center center;
-  animation: moveVertical 60s ease infinite;
+  animation: moveVertical 30s ease infinite;
 
   opacity: 1;
 }
@@ -116,7 +116,7 @@
   left: calc(50% - var(--circle-size) / 2 - 500px);
 
   transform-origin: calc(50% + 400px);
-  animation: moveInCircle 40s linear infinite;
+  animation: moveInCircle 30s linear infinite;
 
   opacity: 1;
 }
@@ -132,7 +132,7 @@
   top: 2400px;
   left: calc(70% - var(--circle-size) / 2);
   transform-origin: calc(50% - 200px);
-  animation: moveHorizontal 40s ease infinite;
+  animation: moveHorizontal 30s ease infinite;
   opacity: 0.7;
 }
 
@@ -180,19 +180,34 @@
   src: url("./fonts/Gilroy-Regular.ttf");
 }
 
-@font-face {
+/* @font-face {
   font-family: "GilroyBold";
   src: url("../../fonts/Gilroy-Bold.ttf");
+} */
+
+@font-face {
+  font-family: "GilroyBold";
+  src: url("../../fonts/Gilroy-Bold.otf");
 }
+
+/* @font-face {
+  font-family: "GilroyLight";
+  src: url("./fonts/Gilroy-Light.ttf");
+} */
 
 @font-face {
   font-family: "GilroyLight";
-  src: url("./fonts/Gilroy-Light.ttf");
+  src: url("./fonts/Gilroy-Light.woff");
 }
+
+/* @font-face {
+  font-family: "GilroyMedium";
+  src: url("./fonts/Gilroy-Medium.ttf");
+} */
 
 @font-face {
   font-family: "GilroyMedium";
-  src: url("./fonts/Gilroy-Medium.ttf");
+  src: url("./fonts/GilroyMedium.ttf");
 }
 
 /* @font-face {
@@ -254,9 +269,9 @@ body {
   position: relative;
 
   top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
 }
 
 .test2 {
@@ -271,9 +286,9 @@ body {
 }
 
 .wrapper-page {
-  max-width: 1920px;
+  max-width: 1620px;
   margin: auto;
-  padding: 120px 30px;
+  /* padding: 120px 30px; */
 }
 
 section {
@@ -318,7 +333,8 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 70px;
-  column-gap: 35px;
+  /* column-gap: 35px; */
+  column-gap: 30px;
 }
 
 .offer {
@@ -357,7 +373,7 @@ h2 {
   /* border: 3px solid #310343; */
   border-radius: 30px;
   background: #09001D;
-  box-shadow: 3px 3px #3F1B89, 0 -15px 3em -6px #3F1B89;
+  box-shadow: 0px 3px #3F1B89, 0px 3px #3F1B89, 0 -15px 3em -6px #3F1B89;
   max-width: 1535px;
   margin: auto;
 }
@@ -465,16 +481,18 @@ h2 {
     font-size: 30px;
   }
 
-  .wrapper-page {
+  /* .wrapper-page {
     padding: 120px 146px;
-  }
+  } */
 
   section {
-    margin-bottom: 180px;
+    /* margin-bottom: 180px; */
+    margin-bottom: 350px;
   }
 
   .header {
-    padding: 360px 0;
+    padding: 380px 0;
+    gap: 60px;
   }
 
   h1,
@@ -492,7 +510,8 @@ h2 {
   }
 
   .offer {
-    width: 380px;
+    /* width: 380px; */
+    width: 350px;
   }
 
   .offer-title {
@@ -513,7 +532,7 @@ h2 {
   }
 
   .about-us_item-col-2 {
-    padding: 30px 45px 45px 100px;
+    padding: 20px 45px 45px 100px;
   }
 
   .about-us_item-title,
