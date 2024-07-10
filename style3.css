@@ -180,30 +180,15 @@
   src: url("./fonts/Gilroy-Regular.ttf");
 }
 
-/* @font-face {
+@font-face {
   font-family: "GilroyBold";
   src: url("../../fonts/Gilroy-Bold.ttf");
-} */
-
-@font-face {
-  font-family: "GilroyBold";
-  src: url("../../fonts/Gilroy-Bold.otf");
 }
 
-/* @font-face {
+@font-face {
   font-family: "GilroyLight";
   src: url("./fonts/Gilroy-Light.ttf");
-} */
-
-@font-face {
-  font-family: "GilroyLight";
-  src: url("./fonts/Gilroy-Light.woff");
 }
-
-/* @font-face {
-  font-family: "GilroyMedium";
-  src: url("./fonts/Gilroy-Medium.ttf");
-} */
 
 @font-face {
   font-family: "GilroyMedium";
@@ -215,17 +200,6 @@
   src: url("./fonts/Gilroy-Thin.ttf");
 } */
 
-/* @font-face {
-    font-family: "GilroyThin";
-    src: url("./fonts/Gilroy-Thin.woff");
-} */
-
-
-
-/* @font-face {
-    font-family: "GilroyThin";
-    src: url("./fonts/Gilroy.otf");
-}  */
 
 /* @font-face {
     font-family: "Futura";
@@ -338,14 +312,38 @@ h2 {
 }
 
 .offer {
-  /* border: 3px solid #310343; */
+  box-sizing: border-box;
   border-radius: 30px;
-  padding: 15px 15px 40px;
   max-width: 380px;
   min-width: 330px;
-  box-shadow: -2px 3px #3A1865, 2px 3px 2px #3F1B89;
-  background: #090215;
+  position: relative;
+  padding: 15px 15px 40px;
+  background: rgba(15, 15, 15);
+  background-clip: padding-box;
+  border: solid 3px transparent;
 }
+
+.offer:hover {
+  background: #050744;
+  transition: .5s;
+  box-shadow: 0px 0px 90px 20px rgba(5, 7, 68, 0.9);
+}
+
+.offer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -3px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: linear-gradient(to top, #1B59F8, rgba(15, 15, 15, 0.3));
+}
+
 
 .offer-img {
   display: flex;
